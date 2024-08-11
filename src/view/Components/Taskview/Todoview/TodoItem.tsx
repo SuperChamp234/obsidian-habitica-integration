@@ -6,7 +6,12 @@ import moment from "moment";
 function TodoItem(props: any) {
     var dueDate = (props.dueDate==null)?"":("Due Date:"+(moment(props.dueDate).format(props.dueDateFormat)));
     var text_html = renderMarkdown(props.todo_text);
-    var note_html = renderMarkdown(props.todo_notes);
+    var note_html = "";
+
+    if (props.todo_notes) {
+        renderMarkdown(props.todo_notes);
+    }
+    
     return (
         <div className="todo-item" id={props.id}>
             <input type="checkbox" className="checkbox" id={props.id} onChange={props.onChange} checked={props.completed}/>

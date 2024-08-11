@@ -3,7 +3,12 @@ import renderMarkdown from "../markdownRender";
 
 function RewardItem(props: any) {
     let reward_text = renderMarkdown(props.reward_text);
-    let reward_notes = renderMarkdown(props.reward_notes);
+    let reward_notes = "";
+
+    if (props.reward_notes) {
+        reward_notes = renderMarkdown(props.reward_notes);
+    }
+    
     return (
         <div className="habit-item" id={props.id}>
             <div className="habit-button-grp">

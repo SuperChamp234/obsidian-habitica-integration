@@ -4,7 +4,11 @@ import renderMarkdown from "../markdownRender";
 
 function DailyItem(props: any) {
     var text_html = renderMarkdown(props.daily_text);
-    var note_html = renderMarkdown(props.daily_notes);
+
+    if (props.daily_notes) {
+        var note_html = renderMarkdown(props.daily_notes);
+    }
+    
     return (
         <div className="todo-item" id={props.id}>
             <input type="checkbox" className="checkbox" id={props.id} onChange={props.onChange} checked={props.completed} />
