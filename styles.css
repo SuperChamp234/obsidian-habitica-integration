@@ -10,6 +10,7 @@
   font-weight: bold;
   padding-bottom: 3%;
 }
+
 .stats {
   width: 95%;
   display: flex;
@@ -21,6 +22,7 @@
 .stats-view {
   border-bottom: 1px;
 }
+
 .modify-todo {
   align-self: center;
 }
@@ -30,29 +32,32 @@
 }
 
 .todo-item {
-    display: grid;
-    grid-template-columns: 1fr 30fr 1fr 1fr;
-    justify-content: left;
-    align-items: flex-start;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    border-bottom: 1px solid #cecece;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 30fr 1fr 1fr;
+  justify-content: left;
+  align-items: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 0;
 }
 
 .description {
   font-family: Open Sans, sans-serif;
   font-weight: 100;
 }
+
 .description > ul {
   list-style-type: none;
 }
-p {
-    margin: 0;
+
+.todo-item p,
+.habit-item p {
+  margin: 0;
 }
 
 .habit-text {
@@ -73,7 +78,13 @@ p {
   display: block;
   width: 100%;
   color: var(--text-on-accent);
+  margin: auto;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  padding: 5px 5px;
+  margin-right: 0;
 }
+
 /* habit-button on hover css selector */
 .habit-button:hover {
   color: var(--text-on-accent);
@@ -101,7 +112,7 @@ p {
   height: 100%;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin-right: 10px;
   margin-top: 5px;
   align-self: start;
@@ -112,20 +123,21 @@ input[type=checkbox] {
 }
 
 .submit-button {
-    /* padding: 5px 5px; */
-    font-size: 15px;
-    border: 1px solid #aaa;
-    /* white-space: nowrap; */
-    /* margin: 10px; */
-    margin: 0;
+  /* padding: 5px 5px; */
+  font-size: 15px;
+  border: 1px solid #aaa;
+  /* white-space: nowrap; */
+  /* margin: 10px; */
+  margin: 0;
 }
 
-input[type=checkbox]:focus {
+input[type="checkbox"]:focus {
   outline: 0;
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Chrome Safari */
+  display: none;
+  /* Chrome Safari */
 }
 
 .plugin-root {
@@ -140,7 +152,6 @@ input[type=checkbox]:focus {
   height: 100%;
   width: 100%;
 }
-
 
 .view-content {
   margin-bottom: 0;
@@ -159,14 +170,23 @@ ul {
   font-size: 12px !important;
   padding-top: 1px;
   padding-right: 2px;
-  
 }
 
-.material-icons.md-18 { font-size: 18px !important; }
-.material-icons.md-24 { font-size: 24px !important; }
-.material-icons.md-32 { font-size: 32px !important; }
-.material-icons.md-48 { font-size: 48px !important; }
+.material-icons.md-18 {
+  font-size: 18px !important;
+}
 
+.material-icons.md-24 {
+  font-size: 24px !important;
+}
+
+.material-icons.md-32 {
+  font-size: 32px !important;
+}
+
+.material-icons.md-48 {
+  font-size: 48px !important;
+}
 
 .react-tabs {
   -webkit-tap-highlight-color: transparent;
@@ -233,6 +253,7 @@ ul {
 .react-tabs__tab-panel--selected {
   display: block;
 }
+
 ul li:not(.task-list-item)::before {
   content: "•";
   color: transparent;
@@ -276,28 +297,23 @@ ul li:not(.task-list-item)::before {
   margin-right: 10px;
 }
 
-button {
-  margin: auto;
-  margin-bottom: 5px;
-  white-space: nowrap;
-  padding: 5px 5px;
-  margin-right: 0;
-}
 .cron {
   display: inline-grid;
   justify-content: center;
-  text-align: center;;
+  text-align: center;
   margin-top: 5px;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10px;
   border-radius: 10px;
 }
+
 #cronMessage {
   margin: 20px;
   margin-bottom: 10px;
-  color: var(--text-normal)
+  color: var(--text-normal);
 }
+
 #cronButton {
   margin: auto;
   margin-bottom: 5px;
@@ -314,10 +330,12 @@ button {
   font-family: Roboto, sans-serif;
   justify-content: flex-start;
 }
+
 .emoji {
   height: 1em;
 }
-.description>ul {
+
+.description > ul {
   list-style-type: disc;
   margin-left: 10% !important;
 }
