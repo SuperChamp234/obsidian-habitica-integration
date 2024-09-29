@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,400;1,100&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open Sans:ital,wght@0,400;1,100&family=Roboto&display=swap");
 
 .add-task-input {
   display: flex;
@@ -112,7 +112,7 @@
   height: 100%;
 }
 
-input[type="checkbox"] {
+.todo-item > [type="checkbox"] {
   margin-right: 10px;
   margin-top: 5px;
   align-self: start;
@@ -131,7 +131,7 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-input[type="checkbox"]:focus {
+.todo-item > input[type="checkbox"]:focus {
   outline: 0;
 }
 
