@@ -135,17 +135,17 @@
   outline: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
-  /* Chrome Safari */
-}
-
 .plugin-root {
   min-width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+}
+
+.plugin-root::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
 }
 
 #classDisplay {
